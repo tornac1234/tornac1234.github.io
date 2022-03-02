@@ -39,11 +39,9 @@ function fixJson(jsonText) {
       if (!itemId) {
         throw Error("Couldn't find ItemId field");
       }
-      console.log(itemId);
       if (itemIds.includes(itemId)) {
         new_id = create_UUID();
         modulesObject[i]["ItemId"] = new_id;
-        console.log(`Created new ItemId: ${new_id}`);
       }
       itemIds += itemId;
     }
