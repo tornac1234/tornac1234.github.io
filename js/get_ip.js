@@ -1,5 +1,5 @@
+// Won't work because of CORS, TODO: find some workaround :(
 const ipField = document.getElementById("IP");
-
 fetch("https://api.ipify.org?format=json")
   .then((resp) => resp.json())
   .then((data) => {
