@@ -21,7 +21,7 @@ fix_button.onclick = () => {
     data_output.value = fixedText;
     log(
       "Successfully fixed file, now copy-paste this text inside your <u>WorldData.json</u> and restart the server.",
-      successColor
+      successColor,
     );
   } catch (error) {
     log("You need to enter a valid JSON text", errorColor);
@@ -63,7 +63,7 @@ function create_UUID() {
       var r = (dt + Math.random() * 16) % 16 | 0;
       dt = Math.floor(dt / 16);
       return (c == "x" ? r : (r & 0x3) | 0x8).toString(16);
-    }
+    },
   );
   return uuid;
 }
