@@ -1,4 +1,7 @@
 # tornac1234.github.io
+
+# Savefile Upgrader Hotfix
+
 This is just some tool to fix the ``Could not load world, creating a new one : System.ArgumentException An item with the same key has already been added.``  
 But it's temporary as this will officially be in next release (current one when of writing this is 1.6.0.0)
 
@@ -18,3 +21,9 @@ The steps are simple:
 6. Remove any text from your "WorldData.json" (the one that's inside the "world" folder this time), then paste the text you got from step 5 in it.
   	- Don't forget to save the file afterwards
 7. When you start again the server, the error should be gone
+
+# Get Default Savefiles
+This lets you download the default savefiles so that you can replace one if it's causing an issue
+
+# Get Your External Ip
+This is almost a joke but you can get your IP there
