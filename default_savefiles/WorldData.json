@@ -1,0 +1,34 @@
+{
+    "ParsedBatchCells": [],
+    "VehicleData": {
+        "Vehicles": []
+    },
+    "InventoryData": {
+        "InventoryItems": [],
+        "StorageSlotItems": [],
+        "Modules": []
+    },
+    "GameData": {
+        "PDAState": {
+            "UnlockedTechTypes": [],
+            "KnownTechTypes": [],
+            "EncyclopediaEntries": [],
+            "PartiallyUnlockedByTechType": [],
+            "PdaLog": [],
+            "CachedProgress": []
+        },
+        "StoryGoals": {
+            "CompletedGoals": [],
+            "RadioQueue": [],
+            "GoalUnlocks": [],
+            "ScheduledGoals": []
+        },
+        "StoryTiming": {
+            "ElapsedTime": 480000.0
+        }
+    },
+    "EscapePodData": {
+        "EscapePods": []
+    },
+    "Seed": ""
+}
