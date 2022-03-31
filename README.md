@@ -30,3 +30,6 @@ This is almost a joke but you can get your IP there
 
 # Remove Red Pieces
 Same steps as for Savefile Upgrader Hotfix but you'll be looking for "BaseData.json" instead of "WorldData.json"
+
+# Aurora Explosion Calculator
+Same steps as for Savefile Upgrader Hotfix but you'll simply need to precise the amount of time you want before aurora's explosion.
