@@ -27,3 +27,6 @@ This lets you download the default savefiles so that you can replace one if it's
 
 # Get Your External Ip
 This is almost a joke but you can get your IP there
+
+# Remove Red Pieces
+Same steps as for Savefile Upgrader Hotfix but you'll be looking for "BaseData.json" instead of "WorldData.json"
