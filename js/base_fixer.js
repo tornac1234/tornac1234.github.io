@@ -68,13 +68,14 @@ function updateUI() {
   let keys = Object.keys(loadedPieces);
   for (let i = 0; i < keys.length; i++) {
     const loadedPiece = loadedPieces[keys[i]];
-    toolUI.innerHTML += `<dt>${loadedPiece["TechType"]}</dt>`;
-
     let id = loadedPiece["Id"];
+
+    toolUI.innerHTML += `<dt id="dt_${id}">${loadedPiece["TechType"]}</dt>`;
+
     let name = `Id: ${id}, `;
     const position = loadedPiece["ItemPosition"];
 
-    toolUI.innerHTML += `<dd>${name}Position:
+    toolUI.innerHTML += `<dd id="dd_${id}">${name}Position:
     ${numberInput(`pos_x_${id}`, "x:", position["X"], 3)}
     ${numberInput(`pos_y_${id}`, "y:", position["Y"], 3)}
     ${numberInput(`pos_z_${id}`, "z:", position["Z"], 3)}
@@ -124,10 +125,10 @@ function updatePosition(pieceId) {
 }
 
 function deletePiece(pieceId) {
-  console.log(pieceId);
   delete loadedPieces[pieceId];
 
-  updateUI();
+  document.getElementById(`dd_${pieceId}`).remove();
+  document.getElementById(`dt_${pieceId}`).remove();
   setModificationApplied(true);
 }
 
